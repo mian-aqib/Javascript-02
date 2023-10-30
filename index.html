@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Percentage Calculator</title>
+</head>
+<body>
+    <h1>Percentage Calculator</h1>
+    <form>
+        <label for="tm">Student total mark</label>
+        <input type="number" name="tm" id="tm1">
+        <label for="om">Student obtain mark</label>
+        <input type="number" name="om" id="om1">
+        <button type="button" onclick="abc()">Calculate</button>
+    </form>
+
+    <script>
+        function abc() {
+            name = prompt("Enter Yuour Name")
+            stdtm =document.querySelector("#tm1").value;
+            obtmark = document.querySelector("#om1").value;
+            res = (obtmark / stdtm) *100
+            alert("You Got it " + res)
+            document.write( name  + "You Got it " + res)
+            console.log(res)
+        }
+
+    </script>
+        
+    
+</body>
+</html>
